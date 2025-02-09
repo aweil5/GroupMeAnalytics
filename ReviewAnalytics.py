@@ -309,13 +309,14 @@ def print_enhanced_analytics(analytics_data):
         if stats.get("most_liked_message") and stats.get("most_liked_message_likes", 0) > 0:
             liked_messages.append({
                 "nickname": stats["nickname"],
+                "real_name": stats["real_name"],
                 "likes": stats["most_liked_message_likes"],
                 "message": stats["most_liked_message"].get("text", "[No text]"),
                 "created_at": datetime.fromtimestamp(stats["most_liked_message"]["created_at"])
             })
     
     for i, msg in enumerate(sorted(liked_messages, key=lambda x: x["likes"], reverse=True)[:5], 1):
-        print(f"\n{i}. From: {msg['nickname']}")
+        print(f"\n{i}. From: {msg['nickname']} ({msg['real_name']})")
         print(f"   Likes: {msg['likes']}")
         print(f"   Posted: {msg['created_at'].strftime('%Y-%m-%d %H:%M:%S')}")
         print(f"   Message: {msg['message']}")
@@ -331,13 +332,14 @@ def print_enhanced_analytics(analytics_data):
             msg_per_day = stats["message_count"] / total_days
             user_msg_per_day.append({
                 "nickname": stats["nickname"],
+                "real_name": stats["real_name"],
                 "msg_per_day": msg_per_day,
                 "total_messages": stats["message_count"]
             })
     
     print("\nTop 10 Most Active Users (Messages per Day):")
     for i, user in enumerate(sorted(user_msg_per_day, key=lambda x: x["msg_per_day"], reverse=True)[:10], 1):
-        print(f"{i}. {user['nickname']}: {user['msg_per_day']:.2f} msgs/day ({user['total_messages']} total)")
+        print(f"{i}. {user['nickname']} ({user['real_name']}): {user['msg_per_day']:.2f} msgs/day ({user['total_messages']} total)")
     
     # Likes per Message Analysis
     print("\nLikes per Message Analysis:")
@@ -347,17 +349,18 @@ def print_enhanced_analytics(analytics_data):
             likes_per_msg = stats["total_likes"] / stats["message_count"]
             user_likes_per_msg.append({
                 "nickname": stats["nickname"],
+                "real_name": stats["real_name"],
                 "likes_per_msg": likes_per_msg,
                 "total_messages": stats["message_count"]
             })
     
     print("\nTop 10 Most Liked Users (per message, min 5 messages):")
     for i, user in enumerate(sorted(user_likes_per_msg, key=lambda x: x["likes_per_msg"], reverse=True)[:10], 1):
-        print(f"{i}. {user['nickname']}: {user['likes_per_msg']:.2f} likes/msg ({user['total_messages']} msgs)")
+        print(f"{i}. {user['nickname']} ({user['real_name']}): {user['likes_per_msg']:.2f} likes/msg ({user['total_messages']} msgs)")
     
     print("\nBottom 10 Least Liked Users (per message, min 5 messages):")
     for i, user in enumerate(sorted(user_likes_per_msg, key=lambda x: x["likes_per_msg"])[:10], 1):
-        print(f"{i}. {user['nickname']}: {user['likes_per_msg']:.2f} likes/msg ({user['total_messages']} msgs)")
+        print(f"{i}. {user['nickname']} ({user['real_name']}): {user['likes_per_msg']:.2f} likes/msg ({user['total_messages']} msgs)")
     
     # Unliked Messages Analysis
     print("\nUnliked Messages Analysis:")
@@ -367,6 +370,7 @@ def print_enhanced_analytics(analytics_data):
             unliked_ratio = stats["unliked_messages"] / stats["message_count"]
             user_unliked.append({
                 "nickname": stats["nickname"],
+                "real_name": stats["real_name"],
                 "unliked_ratio": unliked_ratio,
                 "unliked_count": stats["unliked_messages"],
                 "total_messages": stats["message_count"],
@@ -375,11 +379,11 @@ def print_enhanced_analytics(analytics_data):
     
     print("\nTop 10 Highest Unliked Message Ratios (min 5 messages):")
     for i, user in enumerate(sorted(user_unliked, key=lambda x: x["unliked_ratio"], reverse=True)[:10], 1):
-        print(f"{i}. {user['nickname']}: {user['unliked_ratio']:.2%} ({user['unliked_count']}/{user['total_messages']})")
+        print(f"{i}. {user['nickname']} ({user['real_name']}): {user['unliked_ratio']:.2%} ({user['unliked_count']}/{user['total_messages']})")
     
     print("\nTop 10 Longest Unliked Message Streaks:")
     for i, user in enumerate(sorted(user_unliked, key=lambda x: x["longest_streak"], reverse=True)[:10], 1):
-        print(f"{i}. {user['nickname']}: {user['longest_streak']} messages")
+        print(f"{i}. {user['nickname']} ({user['real_name']}): {user['longest_streak']} messages")
     
     # Most Active Days
     print("\nTop 10 Most Active Days:")
@@ -440,7 +444,7 @@ def run_analysis(filename):
         raise
 
 if __name__ == "__main__":
-    run_analysis("groupme_analytics_20250209_224945.json")
+    run_analysis("groupme_analytics_20250209_231637.json")
     # import sys
     # if len(sys.argv) > 1:
     #     run_analysis(sys.argv[1])
