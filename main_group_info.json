@@ -1,0 +1,1741 @@
+{
+    "id": "67717715",
+    "group_id": "67717715",
+    "name": "\ud83d\udcc8T",
+    "phone_number": "+1 8022343502",
+    "type": "closed",
+    "description": "The Arena",
+    "image_url": "https://i.groupme.com/1024x1024.jpeg.b35952c5b34b439cbaa078beb7b70672",
+    "creator_user_id": "75537480",
+    "created_at": 1618443731,
+    "updated_at": 1739119400,
+    "muted_until": null,
+    "messages": {
+        "count": 78934,
+        "last_message_id": "173911940026497674",
+        "last_message_created_at": 1739119400,
+        "last_message_updated_at": 1739119400,
+        "preview": {
+            "nickname": "Demar DeRozin",
+            "text": "They got rozin on the Jumbotron",
+            "image_url": "https://i.groupme.com/708x708.jpeg.ce5a7f1992054861b10479ad4732add9",
+            "attachments": [
+                {
+                    "type": "image",
+                    "url": "https://i.groupme.com/3024x4032.jpeg.05f3a59862f24eec937d2bea957d0c55"
+                }
+            ]
+        }
+    },
+    "max_members": 5000,
+    "theme_name": null,
+    "like_icon": {
+        "type": "emoji",
+        "pack_id": 1,
+        "pack_index": 54
+    },
+    "requires_approval": false,
+    "show_join_question": false,
+    "join_question": null,
+    "message_deletion_period": 2147483647,
+    "message_deletion_mode": [
+        "admin",
+        "sender"
+    ],
+    "message_edit_period": 15,
+    "children_count": 0,
+    "share_url": "https://groupme.com/join_group/67717715/Px0nqcqn",
+    "share_qr_code_url": "https://image.groupme.com/qr/join_group/67717715/Px0nqcqn/preview?avatarUrl=https%3A%2F%2Fi.groupme.com%2F1024x1024.jpeg.b35952c5b34b439cbaa078beb7b70672",
+    "directories": null,
+    "members": [
+        {
+            "user_id": "104909120",
+            "nickname": "Ray rices left hook",
+            "image_url": "https://i.groupme.com/597x597.jpeg.c5f84661bc784e3ca5f2cc988b53bcca",
+            "id": "1015022408",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Riley Caldarella"
+        },
+        {
+            "user_id": "114006465",
+            "nickname": "Cock and ball torture",
+            "image_url": "https://i.groupme.com/947x947.jpeg.7a55757727654a0bba918559196101e6",
+            "id": "1025254957",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "James Northey"
+        },
+        {
+            "user_id": "116641933",
+            "nickname": "Jello",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.148254ad827e400690895dc9eabdb81d",
+            "id": "1025254958",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Luke  Martin"
+        },
+        {
+            "user_id": "78463696",
+            "nickname": "Dark Knight",
+            "image_url": "https://i.groupme.com/181x181.jpeg.4e8aa47aa9b04b89a7760239991905e8",
+            "id": "1025254963",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Adlee Boerum"
+        },
+        {
+            "user_id": "123257381",
+            "nickname": "Johnny Drama",
+            "image_url": "https://i.groupme.com/833x833.jpeg.0e8882f798d8450d9597272022c68524",
+            "id": "1025254981",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Matt Raivel"
+        },
+        {
+            "user_id": "75459362",
+            "nickname": "Kehan Bhati",
+            "image_url": "https://i.groupme.com/287x287.jpeg.be1f5fd94b6e418c9e8f5967580abe02",
+            "id": "1025255000",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Kehan Bhati"
+        },
+        {
+            "user_id": "74862818",
+            "nickname": "Jesse Pinkman",
+            "image_url": "https://i.groupme.com/194x194.jpeg.dd02c319a1234f79a8390b61fdebcf51",
+            "id": "1025255008",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Ethan Rozin"
+        },
+        {
+            "user_id": "98033578",
+            "nickname": "easymoneysniper",
+            "image_url": "https://i.groupme.com/220x220.jpeg.2d52e804a53e4f7aa703ae2ba7b77cfa",
+            "id": "1025255016",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Lamine Ba"
+        },
+        {
+            "user_id": "93576670",
+            "nickname": "Nettspend",
+            "image_url": "https://i.groupme.com/926x926.jpeg.a96b8a1a4441457f95c531d674d7aac6",
+            "id": "1025255034",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Dylan"
+        },
+        {
+            "user_id": "126351046",
+            "nickname": "Kevin Willard",
+            "image_url": "https://i.groupme.com/800x800.jpeg.547e73ba4cd942c0bdf1eb1d2f3b3ac7",
+            "id": "1025255040",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Justin Samels"
+        },
+        {
+            "user_id": "98992299",
+            "nickname": "Linwood Tie",
+            "image_url": "https://i.groupme.com/677x677.jpeg.4e796f6d519f427bbe04513088f60004",
+            "id": "1025255044",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Linwood Tie"
+        },
+        {
+            "user_id": "116970941",
+            "nickname": "Niko Madrid.",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.1faff3c7d6ea4fb4b76b37c47ba71466",
+            "id": "1025255058",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Max Bezos"
+        },
+        {
+            "user_id": "79098455",
+            "nickname": "Kareem Ahmed",
+            "image_url": "",
+            "id": "1025255110",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Kareem Ahmed"
+        },
+        {
+            "user_id": "113491024",
+            "nickname": "Tony Montana",
+            "image_url": "https://i.groupme.com/190x190.jpeg.5c9d35c10b2042f89118ec3eb5b6c7cc",
+            "id": "1025255339",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Nathaniel Akafia"
+        },
+        {
+            "user_id": "104424607",
+            "nickname": "Blue Steel",
+            "image_url": "https://i.groupme.com/649x649.jpeg.f06a2258124e4178a3d7215ea8dd91cd",
+            "id": "1025255605",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Ogtay Orujov"
+        },
+        {
+            "user_id": "116147205",
+            "nickname": "FitXFearless",
+            "image_url": "https://i.groupme.com/900x900.jpeg.2cbb1912a3684c13bda0609c49db6daa",
+            "id": "1025256674",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Yuvi Multani"
+        },
+        {
+            "user_id": "112601997",
+            "nickname": "Garrison King",
+            "image_url": "",
+            "id": "1025256681",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Garrison King"
+        },
+        {
+            "user_id": "73213094",
+            "nickname": "DJKA$H",
+            "image_url": "https://i.groupme.com/106x106.jpeg.1892c4206a0f4fad8c177031a367812c",
+            "id": "1025257127",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Kasra Etemad"
+        },
+        {
+            "user_id": "42086686",
+            "nickname": "1 Like = .01 Keg",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.3e53aaf073c74de6af90242adc92a9a3",
+            "id": "643734601",
+            "muted": true,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "David Crabtree"
+        },
+        {
+            "user_id": "33442677",
+            "nickname": "John Rzeznik",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.80db6e439d604a13a38ed7e103df97e2",
+            "id": "643734856",
+            "muted": true,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Garnett Jenkins"
+        },
+        {
+            "user_id": "63145787",
+            "nickname": "Jack Anderson",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.7914d1d5728b48d19790445567a9567c",
+            "id": "643795918",
+            "muted": true,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Jack Anderson"
+        },
+        {
+            "user_id": "68327413",
+            "nickname": "It\u2019s 10:33",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.b83900449e3d40609ebd524ca014de9d",
+            "id": "643795926",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Max Fitch"
+        },
+        {
+            "user_id": "23011920",
+            "nickname": "The Boy",
+            "image_url": "https://i.groupme.com/460x460.jpeg.ae8c5ff90e96419cb77d8ae5415c2daa",
+            "id": "643795927",
+            "muted": true,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Michael Kaveney"
+        },
+        {
+            "user_id": "42090187",
+            "nickname": "Vincent Broccolino",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.0d1c9850736946669ffed5172040ceec",
+            "id": "643866083",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Vincent Broccolino"
+        },
+        {
+            "user_id": "74511843",
+            "nickname": "The bearer of bad news",
+            "image_url": "https://i.groupme.com/960x960.jpeg.e5c71bc3daf343849c4190f93be3e65a",
+            "id": "643866085",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Bryson Martin"
+        },
+        {
+            "user_id": "33140790",
+            "nickname": "Randy Jones",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.c1f81b29c04f49a7a79cc0bd73a1accb",
+            "id": "643866086",
+            "muted": true,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Randy Jones"
+        },
+        {
+            "user_id": "41786087",
+            "nickname": "Will Kondon",
+            "image_url": "https://i.groupme.com/750x751.jpeg.a10a26520f474b7a97dd25a7ff5d4393",
+            "id": "644051854",
+            "muted": true,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Will Kondon"
+        },
+        {
+            "user_id": "51714405",
+            "nickname": "Laltimore Lorioles",
+            "image_url": "https://i.groupme.com/399x399.jpeg.cda6585f54894cfe8773cd53fee5302f",
+            "id": "644323282",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Jack McGee"
+        },
+        {
+            "user_id": "51593023",
+            "nickname": "Tobias Funke",
+            "image_url": "https://i.groupme.com/192x192.jpeg.3ef6789005e24164a5ae4e64a3268072",
+            "id": "644323284",
+            "muted": true,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Alex Batska"
+        },
+        {
+            "user_id": "70607340",
+            "nickname": "Mr. LovesToGrabHisNuts",
+            "image_url": "https://i.groupme.com/740x740.jpeg.9d2de0a249eb47639842f869ad89bc24",
+            "id": "644323286",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Sam Stevens"
+        },
+        {
+            "user_id": "91456502",
+            "nickname": "Anthony Strank",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.1ec15bca6afe4ad182b9c8992318d969",
+            "id": "644323289",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Anthony S"
+        },
+        {
+            "user_id": "13818741",
+            "nickname": "Shanghai Shark",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.22a29df07abf48a2bc66778b1b16b45b",
+            "id": "644323294",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Ian Ganis"
+        },
+        {
+            "user_id": "44181827",
+            "nickname": "Laxbones",
+            "image_url": "https://i.groupme.com/498x498.jpeg.bb4e582157df477d87b24e53476c971d",
+            "id": "644323298",
+            "muted": true,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Justin Gold"
+        },
+        {
+            "user_id": "42096235",
+            "nickname": "Sebastian Tobar",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.b2f2ff0a7f3843e485017fb723dbf21e",
+            "id": "644323299",
+            "muted": true,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Sebastian Tobar"
+        },
+        {
+            "user_id": "86884812",
+            "nickname": "Top 2 not 2",
+            "image_url": "https://i.groupme.com/357x357.jpeg.e11100f48b6543d59d34fa8c7bb017ed",
+            "id": "710627658",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "David Greenberg"
+        },
+        {
+            "user_id": "59136894",
+            "nickname": "Austin Beauchamp",
+            "image_url": "https://i.groupme.com/1024x684.jpeg.81dd233820864dc8841e03e441e2e4ff",
+            "id": "710627672",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Austin Beauchamp"
+        },
+        {
+            "user_id": "87635802",
+            "nickname": "Dave Skylark",
+            "image_url": "https://i.groupme.com/800x800.jpeg.0cc60c2626474c7fa117f854088ec48f",
+            "id": "710627690",
+            "muted": true,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Billy Irwin"
+        },
+        {
+            "user_id": "85191863",
+            "nickname": "The Tickle Prince",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.9204424eb54a4e1381892ebf1007eb35",
+            "id": "710627694",
+            "muted": true,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Brendan Donahue"
+        },
+        {
+            "user_id": "48511410",
+            "nickname": "Goober",
+            "image_url": "https://i.groupme.com/640x640.jpeg.fd432b9c1b204fa38a99ddfc78fb22d4",
+            "id": "710627708",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Brendon Tromble"
+        },
+        {
+            "user_id": "61447884",
+            "nickname": "Ashley",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.b893e0a8396d48b9a1b4f366c26c5a3d",
+            "id": "710627719",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Tyler Guthrie"
+        },
+        {
+            "user_id": "66203516",
+            "nickname": "Womanizer",
+            "image_url": "https://i.groupme.com/739x739.jpeg.0f2c6cd0794b41599bdedbe247ad2610",
+            "id": "710627748",
+            "muted": true,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Sam Brendel"
+        },
+        {
+            "user_id": "86443416",
+            "nickname": "Scratch N Sniff",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.aef08813ac24433582a4f8cd5d185238",
+            "id": "710627754",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Eric Hall"
+        },
+        {
+            "user_id": "95139876",
+            "nickname": "The Implication",
+            "image_url": "https://i.groupme.com/543x543.jpeg.b633e5a5dc4141eba5817caf446511a4",
+            "id": "710627809",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Alex Green"
+        },
+        {
+            "user_id": "42839697",
+            "nickname": "Demar DeRozin",
+            "image_url": "https://i.groupme.com/708x708.jpeg.ce5a7f1992054861b10479ad4732add9",
+            "id": "768100863",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Tommy Pearce"
+        },
+        {
+            "user_id": "96238534",
+            "nickname": "Donald J Trump",
+            "image_url": "https://i.groupme.com/183x183.jpeg.cd4dc257a7df4b17a2ca489e8f90693d",
+            "id": "768100964",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Matt Ferrucci"
+        },
+        {
+            "user_id": "100645689",
+            "nickname": "Podrick",
+            "image_url": "https://i.groupme.com/286x286.jpeg.5d115071a8b4490d8bdd9c88a5bc83cb",
+            "id": "768100965",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Oliver Fitch"
+        },
+        {
+            "user_id": "487442",
+            "nickname": "Ben Zic fan",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.2b0878398cb8443ea3abb2f05fb310fe",
+            "id": "768100966",
+            "muted": true,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Ben Dietz"
+        },
+        {
+            "user_id": "95972990",
+            "nickname": "Blum",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.aa106c785b6f4b30aa7e91086801be9d",
+            "id": "768101731",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Jack Blumenberg"
+        },
+        {
+            "user_id": "96593528",
+            "nickname": "Thad Castle",
+            "image_url": "https://i.groupme.com/194x194.jpeg.2cf88a48969f4bb29355dc361ff96e73",
+            "id": "768101784",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Nolan Westlake"
+        },
+        {
+            "user_id": "51698560",
+            "nickname": "Louis Litt",
+            "image_url": "https://i.groupme.com/699x699.jpeg.02283437e9ca4326bf1ce8a1d057fdbe",
+            "id": "768101785",
+            "muted": true,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Andrew Connolly"
+        },
+        {
+            "user_id": "62805509",
+            "nickname": "All Cock No Balls",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.ae5d197682ae4e2ebdba5ae7c535f2d1",
+            "id": "768101786",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Nick Olson"
+        },
+        {
+            "user_id": "65399620",
+            "nickname": "Darius",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.7df14917231945d6ab1975c00e08595f",
+            "id": "768101788",
+            "muted": true,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Philmon Dawit"
+        },
+        {
+            "user_id": "85163355",
+            "nickname": "Philmon Dawit",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.b2c1f37d8881464e9c698dd8ffe46d73",
+            "id": "768101789",
+            "muted": true,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Ben zic"
+        },
+        {
+            "user_id": "95481041",
+            "nickname": "Incurance",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.7a1322d95c2a4c28b68c20e1e92cd7c8",
+            "id": "768101791",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Ryan Schmitz"
+        },
+        {
+            "user_id": "94931160",
+            "nickname": "10 hrs left",
+            "image_url": "https://i.groupme.com/222x222.jpeg.63ff5d1f5331420abd467287fca4b9a4",
+            "id": "768101794",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Zach Mckenelley"
+        },
+        {
+            "user_id": "43759049",
+            "nickname": "Cory Naclerio",
+            "image_url": "",
+            "id": "768101796",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Cory Naclerio"
+        },
+        {
+            "user_id": "96375638",
+            "nickname": "Coby Robinson",
+            "image_url": "https://i.groupme.com/820x820.jpeg.a7b29811608b4e93abf7ff5731d7d7c6",
+            "id": "768101798",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Coby Robinson"
+        },
+        {
+            "user_id": "96428993",
+            "nickname": "that nigga",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.2a34568a3a2a4853823c36318fd40134",
+            "id": "768101805",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Carson Robinson"
+        },
+        {
+            "user_id": "43878489",
+            "nickname": "Speedy Gonzales",
+            "image_url": "https://i.groupme.com/201x201.jpeg.529a5fce9dcd4cc0b42c93e9524e345c",
+            "id": "768101809",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Daniel Tobar"
+        },
+        {
+            "user_id": "29845974",
+            "nickname": "Iraq Lobsta",
+            "image_url": "https://i.groupme.com/500x500.jpeg.b957491fdf4d4f25ad3fc09eeb9882bb",
+            "id": "768101815",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Dan Kolen"
+        },
+        {
+            "user_id": "95135063",
+            "nickname": "Ace",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.ef00a44226ea4028b454785cfe34da78",
+            "id": "768101818",
+            "muted": true,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Ed Gentner"
+        },
+        {
+            "user_id": "51669933",
+            "nickname": "Ganis\u2019s moms nightmare",
+            "image_url": "https://i.groupme.com/455x455.jpeg.fc1c61aae25e45e2ac4761e8e00f25aa",
+            "id": "768101820",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Ethan Cross"
+        },
+        {
+            "user_id": "79561786",
+            "nickname": "Se\u00f1or Scrotum",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.8a626c4cecc04dea89c965b08368f6dc",
+            "id": "768101824",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "JT Delacey"
+        },
+        {
+            "user_id": "96172929",
+            "nickname": "Tafara Gapare",
+            "image_url": "https://i.groupme.com/818x818.jpeg.c243a6144ca54887bf5498abf40466f2",
+            "id": "768101828",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "James McAndrew"
+        },
+        {
+            "user_id": "94818110",
+            "nickname": "Dawg",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.8081cb185c00496fbf99a009e4baa4b2",
+            "id": "768101830",
+            "muted": true,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Jason Bellina"
+        },
+        {
+            "user_id": "96323631",
+            "nickname": "The farm went under",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.7d4989572e014093b04b3058428a9516",
+            "id": "768101834",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Jack O\u2019Reilly"
+        },
+        {
+            "user_id": "69193409",
+            "nickname": "Bunk Moreland",
+            "image_url": "https://i.groupme.com/316x316.jpeg.36a2346e6d894a93b484613891503a70",
+            "id": "768101838",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Jake Campbell"
+        },
+        {
+            "user_id": "54907985",
+            "nickname": "Back From The Dead",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.f14dc238ee2a4be583919adcacd57f73",
+            "id": "768101843",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Kevin Larkin"
+        },
+        {
+            "user_id": "100276801",
+            "nickname": "KC",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.fb27c25c9b534c599ede8d6428f11a4a",
+            "id": "768101846",
+            "muted": true,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Kyle Colbert"
+        },
+        {
+            "user_id": "82430157",
+            "nickname": "Keon Coleman",
+            "image_url": "https://i.groupme.com/1021x1021.jpeg.11783248954a4bc2862ddf8f93c366c2",
+            "id": "768101849",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Max Maust"
+        },
+        {
+            "user_id": "47928556",
+            "nickname": "Mikey Magorka",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.06225403605741e1b34bcc872fb55f15",
+            "id": "768101854",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Mikey Magorka"
+        },
+        {
+            "user_id": "84716582",
+            "nickname": "Jayden Daniels",
+            "image_url": "https://i.groupme.com/964x964.jpeg.98336fb4736f49c8a840fcb8fcc26dfa",
+            "id": "768102090",
+            "muted": true,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Will Drnach"
+        },
+        {
+            "user_id": "12764440",
+            "nickname": "Joey Lentz",
+            "image_url": "https://i.groupme.com/412x412.jpeg.97488c6f20b641a9b2952841c13b6586",
+            "id": "769625516",
+            "muted": true,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Joey Lentz"
+        },
+        {
+            "user_id": "96285910",
+            "nickname": "Tank \u201cThe Shredder\u201d Evans",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.feb4c72e29504e39ba645ad05bd47cff",
+            "id": "828387758",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Jason Lee"
+        },
+        {
+            "user_id": "54415233",
+            "nickname": "The Nicest Guy",
+            "image_url": "https://i.groupme.com/828x828.jpeg.1b046eb11d734e87a6c9c835348e8dd5",
+            "id": "828387759",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Donevan Shum"
+        },
+        {
+            "user_id": "56339351",
+            "nickname": "Junior (0 Goomars)",
+            "image_url": "https://i.groupme.com/700x700.jpeg.f1a37c3b36e64994aaa809b8a3134376",
+            "id": "828387760",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Jeremy Dobson"
+        },
+        {
+            "user_id": "96219161",
+            "nickname": "Dracula",
+            "image_url": "https://i.groupme.com/720x720.jpeg.6b2c9b91bf2b4c5dbd2d943f35f04dae",
+            "id": "828387761",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "James Parks"
+        },
+        {
+            "user_id": "72582256",
+            "nickname": "Brick Tamland",
+            "image_url": "https://i.groupme.com/200x200.jpeg.3131c6cb24f646ddad9d23f395bfb097",
+            "id": "828387762",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Matthew Mamalian"
+        },
+        {
+            "user_id": "62699880",
+            "nickname": "Sleepy",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.d3f50bc768124bd8bc73c23c071a9663",
+            "id": "828388320",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Sean McMahon"
+        },
+        {
+            "user_id": "73990540",
+            "nickname": "Jawn F Kennedy",
+            "image_url": "https://i.groupme.com/580x580.jpeg.5bf61ad6686e46d4a8e19c3456150a97",
+            "id": "828388472",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Connor Rydel"
+        },
+        {
+            "user_id": "54202580",
+            "nickname": "Martin",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.888b9326c9fe40c4bebab755b0a1f496",
+            "id": "869200790",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Robbie Gehman"
+        },
+        {
+            "user_id": "66348993",
+            "nickname": "Cam Ward",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.1ccae7ce034c43ee93b6dc03ecc351c4",
+            "id": "869200851",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Collin Lee"
+        },
+        {
+            "user_id": "79958901",
+            "nickname": "Luke Belmar 2",
+            "image_url": "https://i.groupme.com/1018x1018.jpeg.e0e1a2d07ab948fab5fa1e2ab56b774a",
+            "id": "869200877",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Joshua MacMillan"
+        },
+        {
+            "user_id": "92631435",
+            "nickname": "HFC",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.c481b039ddcd40a4b56fbb666b234391",
+            "id": "869200922",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Holden Axel"
+        },
+        {
+            "user_id": "103292893",
+            "nickname": "Aldo",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.a0ac0cc5d3da4867a7af11c368a954b5",
+            "id": "869200952",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Andrew Weil"
+        },
+        {
+            "user_id": "80017425",
+            "nickname": "Wilson Fisk",
+            "image_url": "https://i.groupme.com/930x930.jpeg.23b9cb1dc8694a68842000e7ede75b0b",
+            "id": "869200960",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Will Finch"
+        },
+        {
+            "user_id": "53655124",
+            "nickname": "Chris McLean",
+            "image_url": "https://i.groupme.com/220x220.jpeg.46fb2182e5074b92af266c655b61424f",
+            "id": "869200965",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Jake Pearce"
+        },
+        {
+            "user_id": "75537480",
+            "nickname": "Gator",
+            "image_url": "https://i.groupme.com/315x315.jpeg.be8ebb1cbbc6499a9d706a26ad20159d",
+            "id": "869201020",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "admin",
+                "owner"
+            ],
+            "name": "Chris Lavelle"
+        },
+        {
+            "user_id": "55444971",
+            "nickname": "Jalen Brunson",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.cef84046fec24c5fa877fdae176eeab0",
+            "id": "869201165",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Jordan Shapiro"
+        },
+        {
+            "user_id": "105649999",
+            "nickname": "Chopped Chin",
+            "image_url": "https://i.groupme.com/638x638.jpeg.951208b67b854e31bce3017a3ede74be",
+            "id": "869201326",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Zack Spofford"
+        },
+        {
+            "user_id": "62376491",
+            "nickname": "datkidjayden",
+            "image_url": "https://i.groupme.com/300x300.jpeg.e15844e34400489aa7dcdf8338dedbb0",
+            "id": "869201705",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Lex B"
+        },
+        {
+            "user_id": "81817089",
+            "nickname": "Bear Jew",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.8af6e58f5e744344b5f031bff0a00fc0",
+            "id": "869201711",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Ryan Marks"
+        },
+        {
+            "user_id": "105650369",
+            "nickname": "Ryan Quinn",
+            "image_url": "",
+            "id": "869202172",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Ryan Quinn"
+        },
+        {
+            "user_id": "19086013",
+            "nickname": "Feyd",
+            "image_url": "https://i.groupme.com/432x432.jpeg.f21ecafe507b45db9c5d402c11a00e81",
+            "id": "869202506",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Aaron Coogan"
+        },
+        {
+            "user_id": "74085622",
+            "nickname": "Frank Abagnale Jr.",
+            "image_url": "https://i.groupme.com/991x991.jpeg.344820eac1774379afe51f32a82775bd",
+            "id": "869202662",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Taylor Fredman"
+        },
+        {
+            "user_id": "103488970",
+            "nickname": "Connor Stanton",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.cdde8af15e0241b7bc0c5df5e9b2df99",
+            "id": "869202677",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "ryan gregoire"
+        },
+        {
+            "user_id": "103600270",
+            "nickname": "Scott Lucarelli",
+            "image_url": "",
+            "id": "869202779",
+            "muted": true,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Scott Lucarelli"
+        },
+        {
+            "user_id": "104308797",
+            "nickname": "Jonny Zyns",
+            "image_url": "https://i.groupme.com/194x194.jpeg.b34beddbdc3e40f6aae064faefba40c9",
+            "id": "869203019",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Jack Tiger"
+        },
+        {
+            "user_id": "62672753",
+            "nickname": "Keg",
+            "image_url": "https://i.groupme.com/592x592.jpeg.9c438144cd5644af981ca6046d6de152",
+            "id": "869204829",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Grayson Hammann"
+        },
+        {
+            "user_id": "50240106",
+            "nickname": "War crime Alakay",
+            "image_url": "https://i.groupme.com/633x633.jpeg.be5d119ba136402aa11812bcd972b8ab",
+            "id": "869204839",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Nick Schiavone"
+        },
+        {
+            "user_id": "60994960",
+            "nickname": "Luke Belmar",
+            "image_url": "https://i.groupme.com/841x841.jpeg.f4244f69bdaf4f6aaac9904d0de9f17d",
+            "id": "869204869",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Luke Jantac"
+        },
+        {
+            "user_id": "75828257",
+            "nickname": "Stilgar",
+            "image_url": "https://i.groupme.com/900x900.jpeg.ea8ab37cc58a479a9e206419cd5918d1",
+            "id": "869206131",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Nate Van Note"
+        },
+        {
+            "user_id": "69289026",
+            "nickname": "Ceedee Lamb",
+            "image_url": "https://i.groupme.com/168x168.jpeg.661216ded0c045c48b836b8060099b06",
+            "id": "869206715",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Nathan Van Note"
+        },
+        {
+            "user_id": "100788999",
+            "nickname": "Escalade",
+            "image_url": "https://i.groupme.com/277x277.jpeg.58175ad5d3c64d93858ffdb611c10332",
+            "id": "869214258",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Joe Campbell"
+        },
+        {
+            "user_id": "104498806",
+            "nickname": "Jason Bornavento",
+            "image_url": "https://i.groupme.com/180x180.jpeg.051c1b5748f843358c0f34942cc97126",
+            "id": "869234456",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Davis Bosley"
+        },
+        {
+            "user_id": "111516321",
+            "nickname": "Xu Xin",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.ac1803a55f7f4956a3e023fdcfadebfc",
+            "id": "928005443",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Connor Lesniewski"
+        },
+        {
+            "user_id": "105852074",
+            "nickname": "Fratskin",
+            "image_url": "https://i.groupme.com/879x879.jpeg.39561a9241e443d28387731ec59de799",
+            "id": "928005517",
+            "muted": true,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Hunter Askin"
+        },
+        {
+            "user_id": "91831681",
+            "nickname": "StephIsCold",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.2253f4f21ed14670953218f4c139067f",
+            "id": "928005658",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Jack Paez"
+        },
+        {
+            "user_id": "80319740",
+            "nickname": "Flesticle",
+            "image_url": "https://i.groupme.com/849x849.jpeg.0aede39865214e97bc04420432ced069",
+            "id": "928005703",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Flynn Testa"
+        },
+        {
+            "user_id": "75411612",
+            "nickname": "Cosby gang",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.ed742d5af301469d87e839c8d07ab918",
+            "id": "928005707",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Arya Habibi"
+        },
+        {
+            "user_id": "82293926",
+            "nickname": "YBG DON",
+            "image_url": "https://i.groupme.com/650x650.jpeg.7f288ac9253f454da4805ed19af9ad13",
+            "id": "928005716",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Josh John"
+        },
+        {
+            "user_id": "105004384",
+            "nickname": "Joe camel",
+            "image_url": "https://i.groupme.com/194x194.jpeg.d3ee027687014c6aa257df4018928462",
+            "id": "928006088",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Nolan Zborai"
+        },
+        {
+            "user_id": "74576499",
+            "nickname": "King Charles",
+            "image_url": "https://i.groupme.com/189x189.jpeg.980dbe4601834616a3808e7628556a6e",
+            "id": "928010516",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Brendan Coulthard"
+        },
+        {
+            "user_id": "103038647",
+            "nickname": "Joe Biden",
+            "image_url": "https://i.groupme.com/737x737.jpeg.89f74a2f37224f0786a5ec6b34743753",
+            "id": "928080697",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Thomas Krukar"
+        },
+        {
+            "user_id": "67093968",
+            "nickname": "Fuck",
+            "image_url": "https://i.groupme.com/674x674.jpeg.2d3a813257d1495084a59b7885f20fa9",
+            "id": "928207499",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Baba Gbadegesin"
+        },
+        {
+            "user_id": "117240892",
+            "nickname": "Lebron",
+            "image_url": "https://i.groupme.com/743x743.jpeg.1d4909ba699a4b86b6b9819616203d56",
+            "id": "928347793",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Cullen Boyle"
+        },
+        {
+            "user_id": "88989949",
+            "nickname": "Henry Danger",
+            "image_url": "https://i.groupme.com/900x900.jpeg.a5c6ab8a2c0747b9a88889a7e3573143",
+            "id": "967066452",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Xander Van Dorpe"
+        },
+        {
+            "user_id": "116347922",
+            "nickname": "Gotlean",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.82d200ed00ae4533929e06fed0209c4b",
+            "id": "967066469",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Zachary Gottlieb"
+        },
+        {
+            "user_id": "82788150",
+            "nickname": "Hot \u201cSmall Dick\u201d Nolan",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.f22b37f1aab1495b9887294160dc23d2",
+            "id": "967066619",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Isaac Baum"
+        },
+        {
+            "user_id": "116844017",
+            "nickname": "Blackrock",
+            "image_url": "https://i.groupme.com/375x375.jpeg.a0d544d27efb47dfa60bacc7fe9a093c",
+            "id": "967066653",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Niko Madrid"
+        },
+        {
+            "user_id": "116319639",
+            "nickname": "Fratrick",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.4156c9527e894231a7fcb90f9896712d",
+            "id": "967066684",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Patrick Eskildsen"
+        },
+        {
+            "user_id": "74400670",
+            "nickname": "DaBaby",
+            "image_url": "https://i.groupme.com/225x225.jpeg.b7e66d058c5f416aa4f7277e4cf646a3",
+            "id": "967066691",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Evan Koch"
+        },
+        {
+            "user_id": "114006400",
+            "nickname": "Jordan Belfort",
+            "image_url": "https://i.groupme.com/179x179.jpeg.3ea1ae82fd4a4440b37e9b9fbe63972a",
+            "id": "967066830",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Merrick Porter"
+        },
+        {
+            "user_id": "70919729",
+            "nickname": "John Mayer",
+            "image_url": "https://i.groupme.com/168x168.jpeg.a6db167e58a04d95940c08ba7090e036",
+            "id": "967067007",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Justin J"
+        },
+        {
+            "user_id": "62524114",
+            "nickname": "The Hatman",
+            "image_url": "https://i.groupme.com/500x500.jpeg.6fbc9cbcd04f4086bd4b23e00eec1acf",
+            "id": "967067046",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Jacob Cohen"
+        },
+        {
+            "user_id": "114275363",
+            "nickname": "Inner Excellence",
+            "image_url": "https://i.groupme.com/405x405.jpeg.f90842e8063746438f7b057e89dc2201",
+            "id": "967067076",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Andrew Benevento"
+        },
+        {
+            "user_id": "96511045",
+            "nickname": "Tex Johnson",
+            "image_url": "https://i.groupme.com/200x200.jpeg.a6b48d6d7d8e4d0e90fa215d44ee738a",
+            "id": "967067564",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Ethan Maokhamphiou"
+        },
+        {
+            "user_id": "44711610",
+            "nickname": "Lugnuts",
+            "image_url": "https://i.groupme.com/864x864.jpeg.109fdacf8da14166905525af7b990921",
+            "id": "967067721",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Drew Dannenfelser"
+        },
+        {
+            "user_id": "116553522",
+            "nickname": "Paulie",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.77d5d98443c04ad68f6f318f17b27d53",
+            "id": "967068589",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Sameer Nasir"
+        },
+        {
+            "user_id": "79284001",
+            "nickname": "Dr Doofenshmirtz",
+            "image_url": "https://i.groupme.com/167x167.jpeg.0febfce94fd942d6a323b2e49036d340",
+            "id": "967069029",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Connor Hartlove"
+        },
+        {
+            "user_id": "95549178",
+            "nickname": "Strawberry Elephant",
+            "image_url": "https://i.groupme.com/194x194.jpeg.d8550b2f5f7a404f859bb24474f13adf",
+            "id": "967070154",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Nathan Kislyuk"
+        },
+        {
+            "user_id": "99318666",
+            "nickname": "Coach Gruden",
+            "image_url": "https://i.groupme.com/994x994.jpeg.aae987dd97254e3f8e67a83e3c0e07a6",
+            "id": "967071175",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Sean mariani"
+        },
+        {
+            "user_id": "68049565",
+            "nickname": "Perry",
+            "image_url": "https://i.groupme.com/556x556.jpeg.4d35e3207c2e4d128a43f9e0a2ce9156",
+            "id": "967071180",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Max Slaney"
+        },
+        {
+            "user_id": "119707155",
+            "nickname": "Tony Montana \u200e",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.e9cfb1c99ee04ff584666dad35424ebe",
+            "id": "967072452",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Nathaniel Akafia"
+        },
+        {
+            "user_id": "102252148",
+            "nickname": "Justin Tucker",
+            "image_url": "https://i.groupme.com/190x190.jpeg.6182d00a1d0249dc87eaae64d6b89bb4",
+            "id": "967072843",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Anthony Santos"
+        },
+        {
+            "user_id": "98036563",
+            "nickname": "Maximus Decimus Meridius",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.39fbb7d7dc0c4da5ae14fadf79f867d2",
+            "id": "967073436",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Charlie Carroll"
+        },
+        {
+            "user_id": "114693496",
+            "nickname": "Tyler Cronk",
+            "image_url": "",
+            "id": "967074750",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Tyler Cronk"
+        },
+        {
+            "user_id": "81392260",
+            "nickname": "Norman Osborn",
+            "image_url": "https://i.groupme.com/948x948.jpeg.a60433a9f76745f082b787b87737ab43",
+            "id": "967074751",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Alex Trent"
+        },
+        {
+            "user_id": "75371388",
+            "nickname": "Rabbi Merrick",
+            "image_url": "https://i.groupme.com/1024x1024.jpeg.23ed3d64ccf447f29a7aa31f4dcea093",
+            "id": "967080699",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "Caleb peck"
+        },
+        {
+            "user_id": "74625587",
+            "nickname": "Santa",
+            "image_url": "https://i.groupme.com/750x750.jpeg.543475d1f28c41efaf9808f1c665aebb",
+            "id": "967097149",
+            "muted": false,
+            "autokicked": false,
+            "roles": [
+                "user"
+            ],
+            "name": "William Schwab"
+        }
+    ],
+    "members_count": 140,
+    "locations": null,
+    "visibility": null,
+    "category_ids": null,
+    "active_call_participants": 0,
+    "unread_count": null,
+    "last_read_message_id": null,
+    "last_read_at": null
+}
