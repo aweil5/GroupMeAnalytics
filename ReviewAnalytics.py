@@ -4,7 +4,11 @@ import numpy as np
 # from textblob import TextBlob
 import re
 from collections import defaultdict
+from ML import load_models, predict_message_quality
 
+kmeans_model, scaler, quality_model = load_models()
+
+# quality_prob = predict_message_quality(sample_message, user_stats, quality_model)
 
 class GroupMeAnalytics:
     def __init__(self, analytics_data):
@@ -93,7 +97,8 @@ class GroupMeAnalytics:
                 user_stats.update({
                     "caa_score": round(avg_caa_score, 2),
                     "activity_consistency": round(consistency_score, 2),
-                    "avg_daily_score": round(np.mean(message_scores) if message_scores else 0, 2)
+                    "avg_daily_score": round(np.mean(message_scores) if message_scores else 0, 2),
+                    "quality_score": calucate_user_Prediction_score(user_stats)
                 })
         
         # Calculate group-wide statistics
@@ -118,29 +123,12 @@ def calculate_improved_caa_score(message, group_context):
     """Calculate a more nuanced Content Above Average score without TextBlob"""
     base_score = 0
     text = message.get("text", "")
-    if not text:
-        return 0
+    # if not text:
+    #     return 0
         
     # 1. Engagement Metrics (40% of score)
     likes = len(message.get("favorited_by", []))
     likes_score = min(likes / (group_context["avg_likes"] or 1) * 20, 20)
-    replies = len(message.get("replies", []))
-    replies_score = min(replies / (group_context["avg_replies"] or 1) * 20, 20)
-    
-    # 2. Content Quality Metrics (30% of score)
-    # Word count normalized against group average
-    word_count = len(text.split())
-    length_score = min(word_count / (group_context["avg_words"] or 1) * 10, 10)
-    
-    # Vocabulary diversity
-    unique_words = len(set(text.lower().split()))
-    uniqueness_score = (unique_words / word_count * 10) if word_count > 0 else 0
-    
-    # Simple sentence structure (based on punctuation)
-    sentence_count = text.count('.') + text.count('!') + text.count('?')
-    if sentence_count == 0 and len(text) > 0:
-        sentence_count = 1
-    structure_score = min(sentence_count / (group_context["avg_sentences"] or 1) * 10, 10)
     
     # 3. Media and Link Contribution (15% of score)
     media_score = calculate_media_score(message)
@@ -150,10 +138,9 @@ def calculate_improved_caa_score(message, group_context):
     
     # Calculate final weighted score
     total_score = (
-        (likes_score + replies_score) * 0.4 +
-        (length_score + uniqueness_score + structure_score) * 0.3 +
-        media_score * 0.15 +
-        time_score * 0.15
+        (likes_score) * 0.4 +
+        media_score * 0.1 +
+        time_score * 0.5
     )
     
     return round(total_score, 2)
@@ -245,22 +232,15 @@ def calculate_timing_score(message, group_context):
     
     # Bonus for active hours
     if hour in group_context["peak_hours"]:
-        time_score += 5
+        time_score += 10
     
-    # Bonus for conversation starters
-    if is_conversation_starter(message, group_context):
-        time_score += 5
     
     # Bonus for consistent contributors
     if is_consistent_contributor(message.get("user_id"), group_context):
-        time_score += 5
+        time_score += 20
         
     return time_score
 
-def is_conversation_starter(message, group_context):
-    """Check if message started a significant conversation thread"""
-    reply_threshold = group_context["avg_replies"] * 1.5
-    return len(message.get("replies", [])) >= reply_threshold
 
 def is_consistent_contributor(user_id, group_context):
     """Check if user is a consistent contributor"""
@@ -289,6 +269,18 @@ def get_top_contributors(users_data, top_n=5):
         reverse=True
     )[:top_n]
 
+
+def calucate_user_Prediction_score(user_stats):
+    # quality_prob = predict_message_quality(sample_message, user_stats, quality_model)
+    quality_score = 0
+    if len(user_stats['top_liked_content']) == 0:
+        return 0
+    for message in user_stats['top_liked_content']:
+        quality_prob = predict_message_quality(message, user_stats, quality_model)
+        quality_score += quality_prob
+    
+    return quality_score / len(user_stats['top_liked_content'])
+
 def print_enhanced_analytics(analytics_data):
     """Print enhanced analytics including CAA metrics and traditional stats"""
     print("\n=== Enhanced GroupMe Analytics ===\n")
@@ -312,7 +304,8 @@ def print_enhanced_analytics(analytics_data):
                 "real_name": stats["real_name"],
                 "likes": stats["most_liked_message_likes"],
                 "message": stats["most_liked_message"].get("text", "[No text]"),
-                "created_at": datetime.fromtimestamp(stats["most_liked_message"]["created_at"])
+                "created_at": datetime.fromtimestamp(stats["most_liked_message"]["created_at"]),
+                "attachments": stats["most_liked_message"].get("attachments", [])
             })
     
     for i, msg in enumerate(sorted(liked_messages, key=lambda x: x["likes"], reverse=True)[:5], 1):
@@ -320,6 +313,7 @@ def print_enhanced_analytics(analytics_data):
         print(f"   Likes: {msg['likes']}")
         print(f"   Posted: {msg['created_at'].strftime('%Y-%m-%d %H:%M:%S')}")
         print(f"   Message: {msg['message']}")
+        print(f"   Media Attachments: {str(msg['attachments'])}")
     
     # Message Activity Stats
     print("\nMessage Activity Statistics:")
@@ -403,11 +397,13 @@ def print_enhanced_analytics(analytics_data):
                 "real_name": stats["real_name"],
                 "caa_score": stats["caa_score"],
                 "consistency": stats["activity_consistency"],
-                "daily_score": stats["avg_daily_score"]
+                "daily_score": stats["avg_daily_score"],
+                "total_score" : stats["caa_score"] * stats["activity_consistency"],
+                "quality_score": stats["quality_score"]
             })
     
     # Sort by CAA score and get top 10
-    top_users = sorted(caa_users, key=lambda x: x["caa_score"], reverse=True)[:10]
+    top_users = sorted(caa_users, key=lambda x: x["total_score"], reverse=True)[:10]
     
     # Print results
     for i, user in enumerate(top_users, 1):
@@ -415,8 +411,18 @@ def print_enhanced_analytics(analytics_data):
         print(f"   CAA Score: {user['caa_score']:.2f}")
         print(f"   Consistency Score: {user['consistency']:.2f}")
         print(f"   Average Daily Score: {user['daily_score']:.2f}")
+        print(f"   Total Score: {user['total_score']:.2f}")
+    
+    print("Top 10 Users with Highest Prediction Score:")
+    top_qual = sorted(caa_users, key=lambda x: x["quality_score"], reverse=True)[:10]
+    for i, user in enumerate(top_qual, 1):
+        print(f"\n{i}. {user['nickname']} ({user['real_name']}):")
+        print(f"   Prediction Score: {user['quality_score']:.2f}")
 
-def run_analysis(filename):
+
+
+
+def run_analysis(filename, save_results=True):
     """Main function to run the enhanced analytics"""
     try:
         # Load data
@@ -428,11 +434,12 @@ def run_analysis(filename):
         enhanced_data = analyzer.process_analytics()
         
         # Save results
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        output_filename = f"enhanced_groupme_analytics_{timestamp}.json"
-        
-        with open(output_filename, "w", encoding="utf-8") as f:
-            json.dump(enhanced_data, f, indent=2, default=str)
+        if save_results:
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            output_filename = f"enhanced_groupme_analytics_{timestamp}.json"
+            
+            with open(output_filename, "w", encoding="utf-8") as f:
+                json.dump(enhanced_data, f, indent=2, default=str)
         
         # Print results
         print_enhanced_analytics(enhanced_data)
@@ -444,24 +451,6 @@ def run_analysis(filename):
         raise
 
 if __name__ == "__main__":
-    run_analysis("groupme_analytics_20250209_231637.json")
-    # import sys
-    # if len(sys.argv) > 1:
-    #     run_analysis(sys.argv[1])
-    # else:
-    #     # Default test file if no argument provided
-    #     print("No file provided, attempting to use most recent analytics file...")
-    #     try:
-    #         # Try to find the most recent analytics file in the current directory
-    #         import glob
-    #         files = glob.glob("groupme_analytics_*.json")
-    #         if files:
-    #             latest_file = max(files, key=os.path.getctime)
-    #             print(f"Found file: {latest_file}")
-    #             run_analysis(latest_file)
-    #         else:
-    #             print("No analytics files found. Please provide a JSON file path as an argument")
-    #     except Exception as e:
-    #         print(f"Error processing analytics: {str(e)}")
-    #         raise
+    run_analysis("groupme_analytics_20250210_153441.json", False)
+
             

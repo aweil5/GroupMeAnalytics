@@ -5,12 +5,14 @@ import httpx
 import json
 import time
 from datetime import datetime
-
+from ReviewAnalytics import run_analysis
 
 load_dotenv()
 API_KEY = os.getenv("API_KEY")
 GROUP_NAME = os.getenv("GROUP_NAME")
 BASE_URL = "https://api.groupme.com/v3"
+START_DATE = datetime(2024, 8, 25)
+
 
 
 def get_group_id(group_name):
@@ -43,6 +45,7 @@ def retrieve_group_messages(group_id, start_date, end_date):
     
     all_messages = []
     last_message_id = None
+    flip = False
 
     while True:
         # Prepare parameters for the request
@@ -57,7 +60,13 @@ def retrieve_group_messages(group_id, start_date, end_date):
             
         
         try:
-            print("Retrieving messages...")
+            if flip:
+                print("Retrieving messages...")
+                flip = False
+            else:
+                print("Retrieving messages..")
+                flip = True
+                
             response = httpx.get(url, params=params)
             
             # Handle rate limiting
@@ -124,10 +133,17 @@ def scrape_analytics(group_id, start_date, end_date=datetime.now()):
 
     
     messages = retrieve_group_messages(group_id, start_date, end_date)
+
+    # with open("messages.json", "w", encoding="utf-8") as f:
+    #     json.dump(messages, f, indent=2, default=str)
+    # Save messages to a JSON file
+
     message_replies = defaultdict(list)
     for message in messages:
         if "reply_id" in message:
             message_replies[message["reply_id"]].append(message)
+    
+    
     for message in messages:  # Changed from message_history to messages
         message_date = datetime.fromtimestamp(message["created_at"])
         date_str = message_date.strftime('%Y-%m-%d')
@@ -136,12 +152,14 @@ def scrape_analytics(group_id, start_date, end_date=datetime.now()):
         analytics["metadata"]["daily_messages"][date_str] += 1
         if start_date <= message_date <= end_date:
             user_id = message["user_id"]
-            if user_id not in member_dict:
+
+            if user_id not in member_dict or member_dict[user_id]["nickname"] == member_dict[user_id]["real_name"]:
                 member_dict[user_id] = {
-                    'nickname': message.get('name', 'Former Member'),
+                    'nickname': "FORMER_MEMBER",
                     'real_name': message.get('name', 'Former Member'),
                 }
-            if user_id not in analytics["users"]:
+                print(f"Adding user to the member dictionary: {member_dict[user_id]}")
+            if user_id not in analytics["users"] and user_id in member_dict:
                 analytics['users'][user_id] = {
                     "nickname": member_dict[user_id]["nickname"],
                     "real_name": member_dict[user_id]["real_name"],
@@ -165,6 +183,7 @@ def scrape_analytics(group_id, start_date, end_date=datetime.now()):
                     "longest_unliked_streak": 0,
                     "daily_messages": {},
                     "unliked_message_content": [],
+                    "top_liked_content": [],
                     # New fields for enhanced analytics
                     "total_replies_received": 0,
                     "avg_replies_per_message": 0,
@@ -204,6 +223,16 @@ def scrape_analytics(group_id, start_date, end_date=datetime.now()):
                     user_stats["longest_unliked_streak"] = user_stats["current_unliked_streak"]
             else:
                 user_stats["current_unliked_streak"] = 0
+                if len(user_stats["top_liked_content"]) < 5:
+                    user_stats["top_liked_content"].append(message)
+                else:
+                    least_liked = 500
+                    index_to_replace = -1
+                    for i in range(1, 5):
+                        if len(user_stats["top_liked_content"][i]["favorited_by"]) < least_liked :
+                            least_liked = len(user_stats["top_liked_content"][i]["favorited_by"])
+                    if index_to_replace != -1:
+                        user_stats["top_liked_content"][index_to_replace] = message
             
             # Update last message
             if (user_stats["last_message"] is None or 
@@ -250,7 +279,13 @@ def scrape_analytics(group_id, start_date, end_date=datetime.now()):
         stats["likes_given_count"] = len(stats["likes_given"])
         stats["liked_by_others"] = list(stats["liked_by_others"])
         stats["likes_given"] = list(stats["likes_given"])
+
+    # Remove all former members from the analytics
+    analytics["users"] = {user_id: stats for user_id, stats in analytics["users"].items() if stats["nickname"] != "FORMER_MEMBER"}
     
+    # with open("analytics.json", "w", encoding="utf-8") as f:
+    #     json.dump(analytics, f, indent=2, default=str)
+
     return analytics
 
 # Example usage:
@@ -261,9 +296,8 @@ if __name__ == "__main__":
         exit(1)
 
     group_id = main_group_info["id"]
-    start_date = datetime(2023, 4, 10)
     
-    analytics_results = scrape_analytics(group_id, start_date,)
+    analytics_results = scrape_analytics(group_id, START_DATE)
     
     # Save results to a JSON file with timestamp
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -273,4 +307,7 @@ if __name__ == "__main__":
         json.dump(analytics_results, f, indent=2, default=str)
     
     print(f"Analytics saved to {output_filename}")
+
+    print("Analyzing Data")
+    run_analysis(output_filename, True)
     
