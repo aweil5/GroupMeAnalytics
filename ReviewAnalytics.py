@@ -4,9 +4,7 @@ import numpy as np
 # from textblob import TextBlob
 import re
 from collections import defaultdict
-from ML import load_models, predict_message_quality
 
-kmeans_model, scaler, quality_model = load_models()
 
 # quality_prob = predict_message_quality(sample_message, user_stats, quality_model)
 
@@ -98,7 +96,6 @@ class GroupMeAnalytics:
                     "caa_score": round(avg_caa_score, 2),
                     "activity_consistency": round(consistency_score, 2),
                     "avg_daily_score": round(np.mean(message_scores) if message_scores else 0, 2),
-                    "quality_score": calucate_user_Prediction_score(user_stats)
                 })
         
         # Calculate group-wide statistics
@@ -270,16 +267,7 @@ def get_top_contributors(users_data, top_n=5):
     )[:top_n]
 
 
-def calucate_user_Prediction_score(user_stats):
-    # quality_prob = predict_message_quality(sample_message, user_stats, quality_model)
-    quality_score = 0
-    if len(user_stats['top_liked_content']) == 0:
-        return 0
-    for message in user_stats['top_liked_content']:
-        quality_prob = predict_message_quality(message, user_stats, quality_model)
-        quality_score += quality_prob
-    
-    return quality_score / len(user_stats['top_liked_content'])
+
 
 def print_enhanced_analytics(analytics_data):
     """Print enhanced analytics including CAA metrics and traditional stats"""
@@ -422,14 +410,13 @@ def print_enhanced_analytics(analytics_data):
 
 
 
-def run_analysis(filename, save_results=True):
+def run_analysis(filename, save_results=True, train_model = False):
     """Main function to run the enhanced analytics"""
     try:
         # Load data
         with open(filename, "r", encoding="utf-8") as f:
             analytics_data = json.load(f)
         
-        # Process analytics
         analyzer = GroupMeAnalytics(analytics_data)
         enhanced_data = analyzer.process_analytics()
         
@@ -451,6 +438,6 @@ def run_analysis(filename, save_results=True):
         raise
 
 if __name__ == "__main__":
-    run_analysis("groupme_analytics_20250210_153441.json", False)
+    run_analysis("March30Rip20250330_220603.json", True)
 
             
